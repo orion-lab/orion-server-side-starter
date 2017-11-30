@@ -1,0 +1,26 @@
+.signin__container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.signin__row {
+  display: flex;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.signin__grid {
+  width: 50%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.signin__ilustration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin__ilustration img {
+    max-width: 300px;
+}

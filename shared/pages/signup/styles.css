@@ -1,0 +1,26 @@
+.signup__container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.signup__row {
+  display: flex;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.signup__grid {
+  width: 50%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.signup__ilustration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup__ilustration img {
+    max-width: 350px;
+}

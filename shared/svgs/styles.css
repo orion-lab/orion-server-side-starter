@@ -1,0 +1,8 @@
+.githubLogo {
+  display: inline-block;
+  vertical-align: top;
+}
+/* Theme modifier */
+.githubLogo--theme-dark path {
+  fill: #fff;
+}

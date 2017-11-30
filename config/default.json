@@ -1,0 +1,42 @@
+{
+  "host": "localhost",
+  "port": 1337,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "authentication": {
+    "secret": "15a61914eea852bc425f18d6d2bc3557b31a80402df5accff27d1f3d1266ee6cf61e64b7cefe68496930abf8a66574c9a0660a7cf6a7df58c6b7d6d7828766b1ef3a396203605df7139189c517e1120edfe2b500e6f7de6c69f570208467443f3408f211bad931982df134660c16ba05bd12bbe18f01e08eac2ff4af589120bd9bd5d23e4c933b4f56f0147403cab345b24948fc3d03102c27bcd9e64c29354033365e7b3433ba4123d9fae5e61598d787fbcb8e54d93060a481f36463516d4481b7ddcebf71c86f35b29a05f5db8318c96acf1525c8565ca7a5e95178c3601d2a2cf5436ae17216b2259792f9a9a8b34f3cd8c10e348c78bd9bdba43e2043ee",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "rethinkdb": {
+    "db": "reactron",
+    "servers": [
+      {
+        "host": "localhost",
+        "port": "28015"
+      }
+    ]
+  }
+}

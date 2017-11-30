@@ -1,0 +1,22 @@
+.textInput {
+  outline: 0;
+  min-height: 30px;
+  font-size: 13px;
+  color: inherit;
+  border-radius: 43px;
+  padding: 6px 18px;
+  border: 1px solid #eaecef;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54
+}
+
+/* Theme modifier */
+.textInput--theme-dark {
+  border-color: #4b4f53;
+  background-color: #4b4f53;
+  color: #fff;
+}

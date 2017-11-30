@@ -1,0 +1,103 @@
+.header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: 1px solid #eaecef;
+  border-bottom: 1px solid #eaecef;
+}
+
+.header__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__search, .header__navbar-menu {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.header__leftside, .header__rightside {
+  display: flex;
+  align-items: center;
+}
+
+.header__rightside {
+    justify-content: flex-end;
+}
+
+.header__profileImage {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  padding: 4px 15px;
+  padding-right: 0;
+  border: 0;
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+  outline: 0;
+}
+
+.header__profileImage img {
+  width: 25px;
+  height: 25px;
+  max-width: 100%;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.header__logo {
+  padding-right: 8px;
+}
+
+.header__search {
+  min-width: 300px;
+}
+
+.header__navbar-menu {
+  font-weight: 600;
+}
+
+.header__authButtonItem {
+    outline: 0;
+    border: 0;
+    border-radius: 40px;
+    padding: 9px 15px;
+    line-height: 1;
+    font-weight: 600;
+    cursor: pointer;
+    color: #333;
+}
+
+.header__authButtonSignup {
+    background: #de6151;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1;
+    display: inline-block;
+}
+
+.header__authButtonSignin {
+    background: transparent;
+}
+
+.header__loadUserDataStatus {
+  display: flex;
+  font-weight: 600;
+  color: #333;
+}
+
+.header__loadUserDataStatus svg {
+  margin-left: 5px;
+}
+
+/* Theme modifier */
+
+.header--theme-dark {
+  background-color: #25292e;
+  border: 0;
+}
+
+.header--theme-grey {
+  background-color: #fafbfc;
+}

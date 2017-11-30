@@ -1,0 +1,19 @@
+.portalList__items {
+  display: flex;
+  margin-left: -7px;
+  margin-right: -7px;
+  flex-wrap: wrap;
+}
+
+.portalList__item {
+  width: 20%;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-bottom: 20px;
+}
+
+.portalList {
+  padding-top: 30px;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 15px;
+}

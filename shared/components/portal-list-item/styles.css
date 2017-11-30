@@ -1,0 +1,46 @@
+.portalListItem {
+  border: 1px solid #eaecef;
+  height: 100%;
+  padding: 15px;
+  border-radius: 3px;
+  display: block;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portalListItem:hover {
+  box-shadow: 0 1px 15px rgba(27,31,35,0.15);
+  transform: scale(1.025);
+}
+
+.portalListItem__image {
+  max-width: 50px;
+}
+
+.portalListItem__name {
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.portalListItem__name {
+  color: #333;
+  font-weight: 600;
+}
+
+.portalListItem__description {
+  margin: 0;
+}
+
+.portalListItem__textGroup {
+
+}
+
+/* Modifier */
+.portalListItem--theme-dark {
+  border: 0;
+}
+
+.portalListItem--theme-dark .portalListItem__description, .portalListItem--theme-dark .portalListItem__name a {
+    color: #fff;
+}

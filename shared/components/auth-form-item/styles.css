@@ -1,0 +1,35 @@
+.authFormItem input[type=text], .authFormItem input[type=password], .authFormItem input[type=email] {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 15px 0;
+}
+
+.authFormItem label {
+    position: relative;
+    padding-left: 27px;
+    border-bottom: 1px solid #eaecef;
+    display: flex;
+    align-items: center;
+}
+
+.authFormItem__icon {
+    position: absolute;
+    left: 0;
+}
+
+.authFormItem label svg {
+    vertical-align: top;
+}
+
+.authFormItem label span {
+    line-height: 1;
+}
+
+.authFormItemError {
+    color: #de6151;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 7px;
+    padding-left: 27px;
+}
