@@ -13,10 +13,6 @@ const cspConfig = {
     defaultSrc: ["'self'"],
     imgSrc: [
       "'self'",
-      'assets-cdn.github.com',
-      'images.pexels.com',
-      'storage.googleapis.com',
-      'blob:',
       // If you use Base64 encoded images (i.e. inlined images), then you will
       // need the following:
       // 'data:',

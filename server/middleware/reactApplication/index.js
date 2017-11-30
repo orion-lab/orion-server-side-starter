@@ -103,12 +103,14 @@ export default function reactApplicationMiddleware(request, response) {
     }
 
     response
-      .status(reactRouterContext.missed
-        ? // If the renderResult contains a "missed" match then we set a 404 code.
-        // Our App component will handle the rendering of an Error404 view.
-        404
-        : // Otherwise everything is all good and we send a 200 OK status.
-        200)
+      .status(
+        reactRouterContext.missed
+          ? // If the renderResult contains a "missed" match then we set a 404 code.
+          // Our App component will handle the rendering of an Error404 view.
+          404
+          : // Otherwise everything is all good and we send a 200 OK status.
+          200,
+      )
       .send(`<!DOCTYPE html>${html}`);
   });
 }

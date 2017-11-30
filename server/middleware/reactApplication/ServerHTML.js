@@ -117,10 +117,16 @@ function ServerHTML(props) {
   return (
     <HTML
       htmlAttributes={ifElse(helmet)(() => helmet.htmlAttributes.toComponent(), null)}
-      headerElements={headerElements.map((x, idx) => (
-        <KeyedComponent key={idx}>{x}</KeyedComponent>
-      ))}
-      bodyElements={bodyElements.map((x, idx) => <KeyedComponent key={idx}>{x}</KeyedComponent>)}
+      headerElements={headerElements.map((x, idx) =>
+        (<KeyedComponent key={idx}>
+          {x}
+        </KeyedComponent>),
+      )}
+      bodyElements={bodyElements.map((x, idx) =>
+        (<KeyedComponent key={idx}>
+          {x}
+        </KeyedComponent>),
+      )}
       appBodyString={reactAppString}
     />
   );
