@@ -86,7 +86,7 @@ const values = {
     connectSrc: [],
     defaultSrc: [],
     fontSrc: ['fonts.googleapis.com/css', 'fonts.gstatic.com'],
-    imgSrc: [],
+    imgSrc: ['storage.googleapis.com'],
     mediaSrc: [],
     manifestSrc: [],
     objectSrc: [],

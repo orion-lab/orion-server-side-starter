@@ -120,12 +120,12 @@ function ServerHTML(props) {
       headerElements={headerElements.map((x, idx) =>
         (<KeyedComponent key={idx}>
           {x}
-        </KeyedComponent>),
+         </KeyedComponent>),
       )}
       bodyElements={bodyElements.map((x, idx) =>
         (<KeyedComponent key={idx}>
           {x}
-        </KeyedComponent>),
+         </KeyedComponent>),
       )}
       appBodyString={reactAppString}
     />
