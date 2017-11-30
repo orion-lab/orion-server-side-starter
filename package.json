@@ -168,7 +168,7 @@
     "webpack-bundle-analyzer": "2.9.1",
     "webpack-dev-middleware": "1.12.2",
     "webpack-hot-middleware": "2.21.0",
-    "webpack-md5-hash": "0.0.5",
+    "webpack-md5-hash": "0.0.6",
     "webpack-node-externals": "1.6.0"
   }
 }
