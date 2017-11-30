@@ -1,10 +1,10 @@
-import service from 'feathers-rethinkdb';
+import service from 'feathers-nedb';
 
 function registerPermissionService(app) {
-  const Model = app.get('rethinkdbClient');
+  const createNeDBInstance = app.get('createNeDBInstance');
   const paginate = app.get('paginate');
   const permissionService = service({
-    Model,
+    Model: createNeDBInstance('permissions'),
     paginate,
     name: 'permissions',
   });

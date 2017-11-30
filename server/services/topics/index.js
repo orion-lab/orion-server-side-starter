@@ -1,12 +1,12 @@
-import service from 'feathers-rethinkdb';
+import service from 'feathers-nedb';
 
 const serviceName = 'topics';
 
 function initTopicService(app) {
-  const Model = app.get('rethinkdbClient');
+  const createNeDBInstance = app.get('createNeDBInstance');
   const paginate = app.get('paginate');
   const topicService = service({
-    Model,
+    Model: createNeDBInstance(serviceName),
     paginate,
     name: serviceName,
   });

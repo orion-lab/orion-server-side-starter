@@ -1,15 +1,15 @@
-import service from 'feathers-rethinkdb';
+import service from 'feathers-nedb';
 import userHooks from './hooks';
 
 const serviceName = 'users';
 
 function registerUserService(app) {
-  const Model = app.get('rethinkdbClient');
+  const createNeDBInstance = app.get('createNeDBInstance');
   const paginate = app.get('paginate');
   // Register service
   app.use(serviceName, service({
     name: serviceName,
-    Model,
+    Model: createNeDBInstance(serviceName),
     paginate,
   }));
   // Register service hook

@@ -22,7 +22,7 @@ import middleware from './middleware/express';
 import services from './services';
 import appHooks from './app.hooks';
 import channels from './channels';
-import rethinkdb from './rethinkdb';
+import neDB from './neDB';
 import config from '../config';
 import { log } from '../internal/utils';
 
@@ -55,8 +55,8 @@ const authConfig = app.get('authentication');
 app.configure(authentication(authConfig));
 app.configure(jwt());
 app.configure(local());
-// Configure rethinkdb
-app.configure(rethinkdb);
+// Configure neDB
+app.configure(neDB);
 // Configure other middleware (see `middleware/index.js`)
 app.configure(middleware);
 // Set up our services (see `services/index.js`)

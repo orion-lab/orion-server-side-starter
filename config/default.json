@@ -29,14 +29,5 @@
       "usernameField": "email",
       "passwordField": "password"
     }
-  },
-  "rethinkdb": {
-    "db": "reactron",
-    "servers": [
-      {
-        "host": "localhost",
-        "port": "28015"
-      }
-    ]
   }
 }
